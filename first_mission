@@ -1,0 +1,70 @@
+print（"hello world"）
+
+func pickCard(){
+    #initialization
+    var cardColor = ["spade","heart","diamond","club"]
+    var cardNumber = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
+    var count:Int = 0
+    var card =string[]
+    for colorindex in cardColor {
+        for numberindex in cardNumber{
+            var card[count] = cardColor[colorindex]+cardNumber[numberindex]
+            count = count +1
+        }
+    }
+    #random
+    var randomNumber:Int = （arc4random()%52）
+    print("You pick the card \(card[randomNumber])")
+}
+
+
+func dealCard(){
+#initialization
+ var cardColor = ["spade","heart","diamond","club"]
+    var cardNumber = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
+    var count:Int = 0
+    var card =string[]
+    for colorindex in cardColor {
+        for numberindex in cardNumber{
+            var card[count] = cardColor[colorindex]+cardNumber[numberindex]
+        }
+    }
+
+    var ini = [Int]()
+
+    while index < 52{
+        ini[index] = index
+        index =index +1
+    }
+#chaos
+    var chaoscount = 52
+    var chaos = [Int]()
+    for index in 0...51{
+       var randomNumber:Int = （arc4random()%chaoscount）
+       chaos[index] = ini[randomNumber]
+       while randomNumber == chaoscount-1 {
+           ini[randomNumber] = ini[randomNumber+1]
+           randomNumber = randomNumber +1
+       }
+       chaoscount = chaoscount -1
+    }
+#dealCard
+    print("A:")
+    for index 0...12{
+        print("\(card[index]) ")
+    }
+    print("B:")
+    for index 13...25{
+        print("\(card[index]) ")
+    }
+    print("C:")
+    for index 26...38{
+        print("\(card[index]) ")
+    }
+    print("D:")
+    for index 39...51{
+        print("\(card[index]) ")
+    }
+
+
+}
