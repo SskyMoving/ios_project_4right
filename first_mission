@@ -5,7 +5,7 @@ func pickCard(){
     var cardColor = ["spade","heart","diamond","club"]
     var cardNumber = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
     var count:Int = 0
-    var card =string[]
+    var card = string[]
     for colorindex in cardColor {
         for numberindex in cardNumber{
             var card[count] = cardColor[colorindex]+cardNumber[numberindex]
@@ -23,7 +23,7 @@ func dealCard(){
  var cardColor = ["spade","heart","diamond","club"]
     var cardNumber = ["2","3","4","5","6","7","8","9","10","J","Q","K","A"]
     var count:Int = 0
-    var card =string[]
+    var card = string[]
     for colorindex in cardColor {
         for numberindex in cardNumber{
             var card[count] = cardColor[colorindex]+cardNumber[numberindex]
@@ -50,19 +50,19 @@ func dealCard(){
     }
 #dealCard
     print("A:")
-    for index 0...12{
+    for index in 0...12{
         print("\(card[index]) ")
     }
     print("B:")
-    for index 13...25{
+    for index in 13...25{
         print("\(card[index]) ")
     }
     print("C:")
-    for index 26...38{
+    for index in 26...38{
         print("\(card[index]) ")
     }
     print("D:")
-    for index 39...51{
+    for index in 39...51{
         print("\(card[index]) ")
     }
 
